@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	{% include 'layouts/title.twig' %}
+
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+
+	{% block css %}{% endblock %}
+</head>
+<body>
+	{% if fullscreen is not defined or not fullscreen %}
+		{% include "layouts/navbar.twig" %}
+	{% endif %}
+
+	<div class="wrapper">
+		{% block content %}{% endblock %}
+	</div>
+
+	<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+	
+    {% block js %}{% endblock %}
+</body>
+</html>

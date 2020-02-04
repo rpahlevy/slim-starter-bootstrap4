@@ -1,0 +1,12 @@
+/cache/*
+!/cache/.gitkeep
+
+/logs/*.log
+
+/vendor/
+/composer.lock
+/commit_messages
+/.env
+*.exe
+*.rar
+*.zip

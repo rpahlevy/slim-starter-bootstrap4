@@ -1,0 +1,18 @@
+/* body {
+	background-color: #f8f9fa;
+} */
+.v-hidden {
+	visibility: hidden!important;
+}
+/*th {
+	text-align: center;
+}*/
+th.fit,
+td.fit {
+	width: 1%;
+}
+.card,
+.card .card-header,
+.card .card-footer {
+	border-radius: 0;
+}
